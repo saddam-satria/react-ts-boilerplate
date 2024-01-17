@@ -40,8 +40,6 @@ module.exports = {
       'react/destructuring-assignment': 'off',
       'react/self-closing-comp': 'off',
       'react/button-has-type': 'off',
-      'testing-library/await-async-query': 'error',
-      'testing-library/no-await-sync-query': 'error',
       'testing-library/no-debugging-utils': 'warn',
       'testing-library/no-dom-import': 'off',
       'comma-dangle': ['off', 'never'],
