@@ -1,9 +1,9 @@
-name: Production Env
+name: Development Env
 
 on:
   push:
     branches:
-      - prod
+      - main
 
 jobs:
   deployment:
