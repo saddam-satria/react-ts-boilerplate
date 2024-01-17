@@ -81,5 +81,4 @@ module.exports = {
         version: 'detect',
       },
     },
-    extends: ["react-app", "react-app/jest"],
-  };
+s  };
