@@ -1,11 +1,9 @@
-import Hello from "../components/hello"
+import Hello from "../components/hello";
 
 const Homepage = () => {
-    return (
-        <>
-            <Hello />
-        </>
-    )
-}
+  return (
+    <Hello />
+  );
+};
 
-export default Homepage
+export default Homepage;

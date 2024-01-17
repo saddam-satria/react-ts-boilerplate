@@ -73,6 +73,11 @@ module.exports = {
       'no-underscore-dangle': 'off',
       'default-param-last': 'off',
       radix: 'off',
+      "import/extensions" :"off",
+      "import/no-unresolved": "off",
+      "react/react-in-jsx-scope": "off",
+      "no-param-reassign": "off",
+      "react-hooks/exhaustive-deps": "warn"
     },
     settings: {
       react: {
