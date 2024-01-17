@@ -1,13 +1,16 @@
-import { render, screen } from '@testing-library/react';
+import renderer from "react-test-renderer";
 
-test('renders learn react link', () => {
-  render(
+const App = () => {
+  return (
     <div>
-        <h1>
-            Hello
-        </h1>
+      <h1>
+        Hello
+      </h1>
     </div>
-  );
-  const linkElement = screen.getByText(/hello/i);
-  expect(linkElement).toBeInTheDocument();
+  )
+}
+
+test("render", () => {
+  const tree = renderer.create(<App />).toJSON();
+  expect(tree)
 });

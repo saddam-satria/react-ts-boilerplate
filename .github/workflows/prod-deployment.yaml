@@ -17,8 +17,8 @@ jobs:
           cache: 'npm'
       - name: Install Package
         run: yarn install
-      # - name: Unit Test
-      #   run: yarn run test
+      - name: Unit Test
+        run: yarn run test
       - name: Build Code
         run: yarn build
       - name: Version Tag
