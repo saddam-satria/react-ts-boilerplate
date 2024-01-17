@@ -1,9 +1,7 @@
 import Hello from "../components/hello";
 
 const Homepage = () => {
-  return (
-    <Hello />
-  );
+  return <Hello />;
 };
 
 export default Homepage;
