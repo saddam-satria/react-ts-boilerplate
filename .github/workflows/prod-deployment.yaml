@@ -53,6 +53,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: Dockerfile
+          file: dockerfiles/prod.dockerfile
           push: true
           tags: saddamsatria/react-ts-boilerplate:${{steps.tag_version.outputs.new_tag}}
