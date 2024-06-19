@@ -21,7 +21,14 @@ module.exports = {
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
-    plugins: ['react', 'react-hooks', 'testing-library',"@typescript-eslint"],
+    resolve:{
+       alias:{
+        "@":"./src"
+       }
+    }, 
+    plugins: ['react', 'react-hooks', 'testing-library',"@typescript-eslint", 
+    "eslint-plugin-import"
+  ],
     rules: {
       'arrow-body-style': 'off',
       'react-hooks/rules-of-hooks': 'error',
@@ -83,5 +90,10 @@ module.exports = {
       react: {
         version: 'detect',
       },
+      "import/resolver":{
+        "alias":{
+          map:[["@", "./src"]]
+        }
+      }
     },
 };

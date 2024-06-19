@@ -18,7 +18,7 @@ COPY tsconfig.json ./
 
 COPY tsconfig.node.json ./
 
-COPY vite.config.ts ./
+COPY vite.config.mts ./
 
 COPY tailwind.config.js ./
 

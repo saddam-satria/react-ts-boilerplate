@@ -14,13 +14,17 @@ COPY tsconfig.json ./
 
 COPY tsconfig.node.json ./
 
-COPY vite.config.ts ./
+COPY vite.config.mts ./
 
 COPY tailwind.config.js ./
 
 COPY postcss.config.js ./
 
 COPY index.html ./index.html
+
+COPY vite-production.config.mts ./
+
+COPY .env ./
 
 RUN yarn build 
 
@@ -32,9 +36,11 @@ WORKDIR /app
 
 COPY public ./public
 
-COPY --from=builder /app/dist ./
+COPY --from=builder /app/build ./
 
 COPY nginx/nginx.conf /etc/nginx/http.d/default.conf
+
+
 
 
 CMD [ "nginx", "-g", "daemon off;" ]

@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fc8019 #f5f5f5;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: thin;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fc8019;
+  border: 3px solid #f5f5f5;
+}
+
+span {
+  cursor: default;
+}
