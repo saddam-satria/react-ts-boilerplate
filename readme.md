@@ -1,4 +1,4 @@
-## POSQ Web App
+## React Web App
 
 #### Source Code Folder Structure
 
